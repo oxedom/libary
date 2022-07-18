@@ -1,4 +1,37 @@
 .body-container {
+    width: 100%;
     display: grid;
-
+   grid-template-areas: 
+    "header header"
+    "main main"
+    "main main"
+    "main main"
+    "main main"
+   "footer footer" ;
+   grid-template-rows: repeat(12, 1fr);
+   grid-template-columns: 150px 1fr;
+ 
 }
+
+.header {
+    display: grid;
+    justify-content: center;
+    background-color: #ffa08c;
+    grid-area: header;
+}
+
+.main {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: #ffff64;
+    grid-area: main;
+    /* display: grid; */
+}
+
+.footer {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: #8cffa0;
+    grid-area: footer; }
