@@ -18,21 +18,14 @@
         <div class="form-container">
             <form id="form" class="form">
                 <span> Add a book!</span>
-                <input placeholder="Name" type="text">
-                <input placeholder="Author" type="text">
-                <input placeholder="Pages" type="text">
+                <input name="name" placeholder="Name" type="text">
+                <input name="author" placeholder="Author" type="text">
+                <input name="pages" placeholder="Pages" type="number" min="1" max="2000">
                 <input id='add-btn' type=image src="./public/plus.svg" alt="Submit Me">
             </form>
 
         </div>
-
-        <section id="content" class="display-container">
-
-
-
-            <section class="display-content">
-            </section>
-        </section>
+        <section id="content" label="content" class="content"></section>
     </main>
 
 

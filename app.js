@@ -37,6 +37,7 @@ const appendBook = (book) => {
     div.appendChild(pAuthor)
     div.appendChild(pPages)
 
+    div.classList.add("card");
     //Inserts Div into the DOM
     contentArea.appendChild(div)
 }
@@ -45,17 +46,31 @@ books.forEach(book => {
     appendBook(book)
 })
 
+//Book Class Maker
 function Book(name, author, pages) {
     this.name = name;
     this.author = author;
     this.pages = pages
 }
 
+
+
 const addBtn = document.getElementById('add-btn')
 const form = document.getElementById('form')
 
 form.addEventListener('submit', (e) => {
-    console.log(e)
+    e.preventDefault()
+
+    // Retrieve Form Data
+    const formData = new FormData(e.target)
+    const formProps = Object.fromEntries(formData)
+    const newBook = new Book(formProps.name, formProps.author, formProps.pages)
+    //Add new Book to Array of Books
+    books.push(newBook)
+    appendBook(newBook)
+
+
+
 })
 addBtn.addEventListener('click', (e) => {
 
