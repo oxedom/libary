@@ -1,9 +1,9 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,16 +21,18 @@
                 <input placeholder="Name" type="text">
                 <input placeholder="Author" type="text">
                 <input placeholder="Pages" type="text">
-                <button class="btn">+</button>
+                <img src="./public/plus.svg">
+
             </form>
 
         </div>
 
-        <section class="display-container">
-            <header style="text-align: center;">
-                <h1>Look at all these books</h1>
-            </header>
+        <section id="content" class="display-container">
 
+
+
+            <section class="display-content">
+            </section>
         </section>
     </main>
 
@@ -40,5 +42,6 @@
     <footer class="footer"> Oxedoms Project</footer>
 
 </body>
+<script src="app.js"></script>
 
 </html>
