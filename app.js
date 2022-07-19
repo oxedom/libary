@@ -60,7 +60,6 @@ const form = document.getElementById('form')
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-
     // Retrieve Form Data
     const formData = new FormData(e.target)
     const formProps = Object.fromEntries(formData)
@@ -68,10 +67,4 @@ form.addEventListener('submit', (e) => {
     //Add new Book to Array of Books
     books.push(newBook)
     appendBook(newBook)
-
-
-
-})
-addBtn.addEventListener('click', (e) => {
-
 })
