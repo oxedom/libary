@@ -71,14 +71,14 @@ body {
     justify-items: center;
 }
 
-.form img {
+.form input[type=image] {
     width: 1.3rem;
     background: rgb(11, 122, 177);
     background: radial-gradient(circle, rgba(11, 122, 177, 1) 0%, rgba(13, 124, 181, 0.9) 95%, rgba(18, 174, 254, 0.01) 100%);
     border-radius: 75px;
 }
 
-.form img:hover {
+.form input[type=image]:hover {
     transform: scale(1.1);
     background: rgb(1, 143, 214);
     background: radial-gradient(circle, rgba(1, 143, 214, 1) 0%, rgba(92, 192, 243, 0.9) 95%, rgba(18, 174, 254, 0.01) 100%);

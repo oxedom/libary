@@ -39,10 +39,24 @@ const appendBook = (book) => {
 
     //Inserts Div into the DOM
     contentArea.appendChild(div)
-
-
 }
 
 books.forEach(book => {
     appendBook(book)
+})
+
+function Book(name, author, pages) {
+    this.name = name;
+    this.author = author;
+    this.pages = pages
+}
+
+const addBtn = document.getElementById('add-btn')
+const form = document.getElementById('form')
+
+form.addEventListener('submit', (e) => {
+    console.log(e)
+})
+addBtn.addEventListener('click', (e) => {
+
 })
