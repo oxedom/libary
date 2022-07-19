@@ -82,6 +82,11 @@ body {
     width: 7.5rem;
 }
 
+input::-webkit-input-placeholder {
+    font-size: 10px;
+    line-height: 3;
+}
+
 .card {
     display: flex;
     flex-direction: column;
