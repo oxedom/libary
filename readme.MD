@@ -1,6 +1,6 @@
 #Libary Project
 
-Libary App is a  project which was purpose was to make use ES5 class functions after learning about ES5 Object prototypes.
+Libary App is a  project which purpose was to make use ES5 Object prototypes as well as elgant DOM minpulation and CSS practice. 
 
 
-All of the code was written from scratch!
+All of the code was written from scratch by Mwa!
