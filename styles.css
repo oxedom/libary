@@ -1,16 +1,13 @@
 .body-container {
     width: 100%;
     display: grid;
-   grid-template-areas: 
-    "header header"
-    "main main"
-    "main main"
-    "main main"
-    "main main"
-   "footer footer" ;
-   grid-template-rows: repeat(12, 1fr);
-   grid-template-columns: 150px 1fr;
- 
+    grid-template-areas:
+        "header header"
+        "main main"
+        "main main"
+        "main main"
+        "main main"
+        "footer footer";
 }
 
 .header {
@@ -22,11 +19,36 @@
 
 .main {
     display: grid;
-    justify-content: center;
-    align-content: center;
+    grid-template-columns: 1fr 10fr;
+    grid-gap: 1rem;
     background-color: #ffff64;
     grid-area: main;
     /* display: grid; */
+}
+
+.form-container {
+    border: black solid 1px;
+}
+
+.display-header {
+    text-align: center;
+    font-size: 42;
+    padding-bottom: 30px;
+}
+
+.form {
+
+    padding-top: 1rem;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+input {
+    width: 7.5rem;
 }
 
 .footer {
@@ -34,4 +56,10 @@
     justify-content: center;
     align-content: center;
     background-color: #8cffa0;
-    grid-area: footer; }
+    grid-area: footer;
+}
+
+.btn {
+    align-self: center;
+    justify-self: center;
+}
