@@ -6,22 +6,24 @@
         "main main"
         "main main"
         "main main"
-        "main main"
         "footer footer";
 }
+
+* {
+    box-sizing: border-box;
+}
+
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .header {
-
     display: grid;
     justify-content: center;
     background: rgb(125, 171, 218);
     background: linear-gradient(90deg, rgba(125, 171, 218, 1) 0%, rgba(40, 150, 237, 1) 45%, rgba(107, 176, 230, 1) 90%);
     background-color: repeat;
-
     background-size: 300%;
     grid-area: header;
 }
@@ -33,7 +35,6 @@ body {
     background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(205, 238, 255, 1) 100%);
     grid-area: main;
-    /* display: grid; */
 }
 
 .form-container {
@@ -48,8 +49,9 @@ body {
 
 .content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+        "content content content"
 }
 
 .form {
@@ -88,6 +90,9 @@ input::-webkit-input-placeholder {
 }
 
 .card {
+    grid-area: 'content';
+    width: 300px;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -100,7 +105,10 @@ input::-webkit-input-placeholder {
 
 }
 
+
+
 .footer {
+    padding: 10px;
     display: grid;
     justify-content: center;
     align-content: center;
