@@ -47,12 +47,20 @@ books.forEach(book => {
 })
 
 //Book Class Maker
-function Book(name, author, pages) {
-    this.name = name;
-    this.author = author;
-    this.pages = pages
-}
+// function Book(name, author, pages) {
+//     this.name = name;
+//     this.author = author;
+//     this.pages = pages
+// }
 
+
+ class Book {
+    constructor(name, author, pages) {
+        this.name = name;
+        this.author = author;
+        this.pages = pages
+    }
+ }
 
 
 const addBtn = document.getElementById('add-btn')
